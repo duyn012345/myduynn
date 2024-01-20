@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myduynn.myduynn.dasboardController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #566047;" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="121.0" layoutX="123.0" layoutY="232.0" startX="-116.75" strokeWidth="1.5">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Button fx:id="Home" layoutX="17.0" layoutY="271.0" mnemonicParsing="false" onAction="#connectHomeButtonOnAction" prefHeight="41.0" prefWidth="215.0" style="-fx-background-color: #DDE2C6;" text="Home">
+               <font>
+                  <Font name="Calisto MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="68.0" layoutY="154.0" prefHeight="34.0" prefWidth="105.0" text="Personal Finance " textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="146.0" text="Management" textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="13.0" />
+               </font>
+            </Label>
+            <Circle fill="#8f7e7e0c" layoutX="117.0" layoutY="168.0" radius="54.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button fx:id="AddT" layoutX="17.0" layoutY="336.0" mnemonicParsing="false" onAction="#connectAddTButtonOnAction" prefHeight="41.0" prefWidth="214.0" style="-fx-background-color: #DDE2C6;" text="AddTransaction">
+               <font>
+                  <Font name="Calisto MT Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="480.0" style="-fx-background-color: #DDE2C6;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="66.0" layoutY="180.0" prefHeight="28.0" prefWidth="81.0" text="Username:">
+               <font>
+                  <Font name="Calisto MT" size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="151.0" layoutY="179.0" prefHeight="28.0" prefWidth="186.0" text="Le Thi My Duyen">
+               <font>
+                  <Font name="Bookman Old Style" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="68.0" layoutY="229.0" prefHeight="19.0" prefWidth="76.0" text="Birthday:">
+               <font>
+                  <Font name="Calisto MT" size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="152.0" layoutY="223.0" prefHeight="26.0" prefWidth="184.0" text="06/05/2005">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="68.0" layoutY="275.0" prefHeight="31.0" prefWidth="61.0" text="Email:">
+               <font>
+                  <Font name="Calisto MT" size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="151.0" layoutY="275.0" prefHeight="29.0" prefWidth="227.0" text="duyenltm.23itb.@vku.udn.vn">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="68.0" layoutY="327.0" prefHeight="31.0" prefWidth="61.0" text="Gender:">
+               <font>
+                  <Font name="Calisto MT" size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="152.0" layoutY="328.0" prefHeight="6.0" prefWidth="143.0" text="Nữ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutY="1.0" prefHeight="580.0" prefWidth="480.0" style="-fx-background-color: #DDE2C6;">
+               <children>
+                  <Label layoutX="92.0" layoutY="224.0" text="Total spending">
+                     <font>
+                        <Font name="Bell MT Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="325.0" layoutY="224.0" text="Total income">
+                     <font>
+                        <Font name="Bell MT Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="121.0" layoutY="264.0" prefHeight="26.0" prefWidth="56.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="347.0" layoutY="264.0" prefHeight="26.0" prefWidth="56.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b972b62b" height="103.0" layoutX="60.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="169.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff2b" height="101.0" layoutX="286.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="171.0" />
+                  <ProgressIndicator layoutX="97.0" layoutY="338.0" prefHeight="56.0" prefWidth="105.0" progress="0.0" />
+                  <ProgressIndicator layoutX="312.0" layoutY="338.0" prefHeight="56.0" prefWidth="105.0" progress="0.0" />
+                  <BarChart layoutX="111.0" layoutY="20.0" prefHeight="189.0" prefWidth="276.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children></AnchorPane>
+         </children></AnchorPane>
+   </center>
+</BorderPane>
